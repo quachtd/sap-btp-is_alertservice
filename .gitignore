@@ -1,0 +1,13 @@
+target/
+.env
+certs/custom-cacerts.jks
+certs/cpi-full-chain.pem
+certs/cpi-cert-*.pem
+.idea/
+*.iml
+.DS_Store
+*.class
+*.log
+secret.yaml
+configmap.yaml
+my_env_localrun.txt

@@ -1,0 +1,156 @@
+{
+    "d": {
+        "results": [           
+            {
+                "__metadata": {
+                    "id": "https://plh-integration-dev.it-cpi034.cfapps.us10-002.hana.ondemand.com:443/api/v1/MessageProcessingLogs('AGoie3pDItd8au-B8vx5Wd5xCxP3')",
+                    "uri": "https://plh-integration-dev.it-cpi034.cfapps.us10-002.hana.ondemand.com:443/api/v1/MessageProcessingLogs('AGoie3pDItd8au-B8vx5Wd5xCxP3')",
+                    "type": "com.sap.hci.api.MessageProcessingLog"
+                },
+                "ApplicationMessageType": "SAPToDownstream",
+                "LogStart": "/Date(1780644730349)/",
+                "LogEnd": "/Date(1780644859750)/",
+                "Sender": "SAP",
+                "Receiver": "EJS",
+                "IntegrationFlowName": "ServiceOrder_SAP_to_Downstream_EJS",
+                "Status": "ESCALATED",
+                "IntegrationArtifact": {
+                    "__metadata": {
+                        "type": "com.sap.hci.api.IntegrationArtifact"
+                    },
+                    "Id": "ServiceOrder_SAP_to_Downstream_EJS",
+                    "Name": "ServiceOrder_SAP_to_Downstream_EJS",
+                    "Type": "INTEGRATION_FLOW",
+                    "PackageId": "PLHPTDServiceOrderDownstream",
+                    "PackageName": "PLH_PTD_ServiceOrder_Downstream"
+                },
+                "CustomStatus": "ESCALATED"
+            },
+            {
+                "__metadata": {
+                    "id": "https://plh-integration-dev.it-cpi034.cfapps.us10-002.hana.ondemand.com:443/api/v1/MessageProcessingLogs('AGoi09LmjoL7xzNk9ThA-QDBqiG3')",
+                    "uri": "https://plh-integration-dev.it-cpi034.cfapps.us10-002.hana.ondemand.com:443/api/v1/MessageProcessingLogs('AGoi09LmjoL7xzNk9ThA-QDBqiG3')",
+                    "type": "com.sap.hci.api.MessageProcessingLog"
+                },
+                "ApplicationMessageType": "SAPToDownstream",
+                "LogStart": "/Date(1780667346050)/",
+                "LogEnd": "/Date(1780667427265)/",
+                "Sender": "SAP",
+                "Receiver": "HUBXMAX",
+                "IntegrationFlowName": "ServiceOrder_SAP_to_Downstream_WAVE_SDPAWS_HUBXMAX",
+                "Status": "ESCALATED",
+                "IntegrationArtifact": {
+                    "__metadata": {
+                        "type": "com.sap.hci.api.IntegrationArtifact"
+                    },
+                    "Id": "ServiceOrder_SAP_to_Downstream_WAVE_SDPAWS_HUBXMAX",
+                    "Name": "ServiceOrder_SAP_to_Downstream_WAVE_SDPAWS_HUBXMAX",
+                    "Type": "INTEGRATION_FLOW",
+                    "PackageId": "PLHPTDServiceOrderDownstream",
+                    "PackageName": "PLH_PTD_ServiceOrder_Downstream"
+                },
+                "CustomStatus": "\"CustomError\""
+            },
+            {
+                "__metadata": {
+                    "id": "https://plh-integration-dev.it-cpi034.cfapps.us10-002.hana.ondemand.com:443/api/v1/MessageProcessingLogs('AGoi085IFErTs5T4pZ-O-MiJ-K3X')",
+                    "uri": "https://plh-integration-dev.it-cpi034.cfapps.us10-002.hana.ondemand.com:443/api/v1/MessageProcessingLogs('AGoi085IFErTs5T4pZ-O-MiJ-K3X')",
+                    "type": "com.sap.hci.api.MessageProcessingLog"
+                },
+                "ApplicationMessageType": "SAPToDownstream",
+                "LogStart": "/Date(1780667342220)/",
+                "LogEnd": "/Date(1780667483538)/",
+                "Sender": "SAP",
+                "Receiver": "EJS",
+                "IntegrationFlowName": "ServiceOrder_SAP_to_Downstream_EJS",
+                "Status": "ESCALATED",
+                "IntegrationArtifact": {
+                    "__metadata": {
+                        "type": "com.sap.hci.api.IntegrationArtifact"
+                    },
+                    "Id": "ServiceOrder_SAP_to_Downstream_EJS",
+                    "Name": "ServiceOrder_SAP_to_Downstream_EJS",
+                    "Type": "INTEGRATION_FLOW",
+                    "PackageId": "PLHPTDServiceOrderDownstream",
+                    "PackageName": "PLH_PTD_ServiceOrder_Downstream"
+                },
+                "CustomStatus": "ESCALATED"
+            },
+            {
+                "__metadata": {
+                    "id": "https://plh-integration-dev.it-cpi034.cfapps.us10-002.hana.ondemand.com:443/api/v1/MessageProcessingLogs('AGoi09ST0abH5IanaFpKbkN6w1N3')",
+                    "uri": "https://plh-integration-dev.it-cpi034.cfapps.us10-002.hana.ondemand.com:443/api/v1/MessageProcessingLogs('AGoi09ST0abH5IanaFpKbkN6w1N3')",
+                    "type": "com.sap.hci.api.MessageProcessingLog"
+                },
+                "ApplicationMessageType": "SAPToDownstream",
+                "LogStart": "/Date(1780667348741)/",
+                "LogEnd": "/Date(1780667510766)/",
+                "Sender": "SAP",
+                "Receiver": "BC_WAVE_JULICH_160",
+                "IntegrationFlowName": "ServiceOrder_SAP_to_Downstream_ESKO_WAVE_SFTP",
+                "Status": "ESCALATED",
+                "IntegrationArtifact": {
+                    "__metadata": {
+                        "type": "com.sap.hci.api.IntegrationArtifact"
+                    },
+                    "Id": "ServiceOrder_SAP_to_Downstream_ESKO_WAVE_SFTP",
+                    "Name": "ServiceOrder_SAP_to_Downstream_ESKO_WAVE_SFTP",
+                    "Type": "INTEGRATION_FLOW",
+                    "PackageId": "PLHPTDServiceOrderDownstream",
+                    "PackageName": "PLH_PTD_ServiceOrder_Downstream"
+                },
+                "CustomStatus": "ESCALATED"
+            },            
+            {
+                "__metadata": {
+                    "id": "https://plh-integration-dev.it-cpi034.cfapps.us10-002.hana.ondemand.com:443/api/v1/MessageProcessingLogs('AGojLRvO5CUIYmzVZwWdyrkHNpRo')",
+                    "uri": "https://plh-integration-dev.it-cpi034.cfapps.us10-002.hana.ondemand.com:443/api/v1/MessageProcessingLogs('AGojLRvO5CUIYmzVZwWdyrkHNpRo')",
+                    "type": "com.sap.hci.api.MessageProcessingLog"
+                },
+                "ApplicationMessageType": "Blackline_GLAccount",
+                "LogStart": "/Date(1780690203163)/",
+                "LogEnd": "/Date(1780692078670)/",
+                "Sender": "SAP",
+                "Receiver": "BLACKLINE",
+                "IntegrationFlowName": "com.sap.integration.cloud.pipeline.v2.generic.step06.outbound.processing",
+                "Status": "ESCALATED",
+                "IntegrationArtifact": {
+                    "__metadata": {
+                        "type": "com.sap.hci.api.IntegrationArtifact"
+                    },
+                    "Id": "com.sap.integration.cloud.pipeline.v2.generic.step06.outbound.processing",
+                    "Name": "Pipeline v2 Generic Step06 - Outbound Processing",
+                    "Type": "INTEGRATION_FLOW",
+                    "PackageId": "CloudIntegrationPipelineGenericOutbound",
+                    "PackageName": "Cloud Integration Pipeline - Generic Outbound"
+                },
+                "CustomStatus": "MaxRetriesExceeded"
+            },
+            {
+                "__metadata": {
+                    "id": "https://plh-integration-dev.it-cpi034.cfapps.us10-002.hana.ondemand.com:443/api/v1/MessageProcessingLogs('AGojLkZnlpoy1S_JJ38E94w5KpQk')",
+                    "uri": "https://plh-integration-dev.it-cpi034.cfapps.us10-002.hana.ondemand.com:443/api/v1/MessageProcessingLogs('AGojLkZnlpoy1S_JJ38E94w5KpQk')",
+                    "type": "com.sap.hci.api.MessageProcessingLog"
+                },
+                "ApplicationMessageType": "Blackline_GLAccount",
+                "LogStart": "/Date(1780690502933)/",
+                "LogEnd": "/Date(1780692378411)/",
+                "Sender": "SAP",
+                "Receiver": "BLACKLINE",
+                "IntegrationFlowName": "com.sap.integration.cloud.pipeline.v2.generic.step06.outbound.processing",
+                "Status": "ESCALATED",
+                "IntegrationArtifact": {
+                    "__metadata": {
+                        "type": "com.sap.hci.api.IntegrationArtifact"
+                    },
+                    "Id": "com.sap.integration.cloud.pipeline.v2.generic.step06.outbound.processing",
+                    "Name": "Pipeline v2 Generic Step06 - Outbound Processing",
+                    "Type": "INTEGRATION_FLOW",
+                    "PackageId": "CloudIntegrationPipelineGenericOutbound",
+                    "PackageName": "Cloud Integration Pipeline - Generic Outbound"
+                },
+                "CustomStatus": "MaxRetriesExceeded"
+            }
+        ]
+    }
+}

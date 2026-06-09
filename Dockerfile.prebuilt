@@ -1,0 +1,11 @@
+# Use when cross-platform metadata pulls fail: mvn package first, then build this image.
+#   mvn clean package -DskipTests
+#   docker build -f Dockerfile.prebuilt -t quachtd/btp-is-alert-service:1.0.0 . --platform linux/amd64
+FROM eclipse-temurin:17-jre-jammy
+WORKDIR /app
+RUN groupadd -r spring && useradd -r -g spring spring \
+    && mkdir -p /app/certs \
+    && chown -R spring:spring /app
+USER spring:spring
+COPY target/alert-service-*.jar app.jar
+ENTRYPOINT ["sh", "-c", "exec java $JAVA_OPTS -jar app.jar"]

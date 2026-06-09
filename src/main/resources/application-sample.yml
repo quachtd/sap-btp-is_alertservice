@@ -1,0 +1,23 @@
+cpi:
+  base-url: https://plh-integration-dev.it-cpi034.cfapps.us10-002.hana.ondemand.com
+  mpl:
+    sample-file: sample_input.json
+  oauth:
+    token-url: ${CPI_TOKEN_URL:}
+    client-id: ${CPI_CLIENT_ID:}
+    client-secret: ${CPI_CLIENT_SECRET:}
+
+logging:
+  level:
+    com.btp.is.alertservice: DEBUG
+    org.springframework.web.client: INFO
+
+event-mesh:
+  base-url: ${EM_BASE_URL:}
+  topic: ${EM_TOPIC:}
+  publish-path: ${EM_PUBLISH_PATH:/messagingrest/v1/topics/{topic}/messages}
+  fail-on-error: true
+  oauth:
+    token-url: ${EM_TOKEN_URL:}
+    client-id: ${EM_CLIENT_ID:}
+    client-secret: ${EM_CLIENT_SECRET:}

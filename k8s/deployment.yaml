@@ -1,0 +1,48 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: btp-is-alert-service
+  namespace: dev-service
+  labels:
+    app: btp-is-alert-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: btp-is-alert-service
+  template:
+    metadata:
+      labels:
+        app: btp-is-alert-service
+    spec:
+      # Uncomment if pulling from a private Docker Hub repository:
+      # imagePullSecrets:
+      #   - name: dockerhub-credentials
+      containers:
+        - name: alert-service
+          image: quachtd/btp-is-alert-service:latest
+          imagePullPolicy: Always
+          envFrom:
+            - configMapRef:
+                name: btp-is-alert-service-config
+            - secretRef:
+                name: btp-is-alert-service-secrets
+          volumeMounts:
+            - name: truststore
+              mountPath: /app/certs/custom-cacerts.jks
+              subPath: custom-cacerts.jks
+              readOnly: true
+          resources:
+            requests:
+              cpu: 100m
+              memory: 256Mi
+            limits:
+              cpu: 500m
+              memory: 512Mi
+      volumes:
+        - name: truststore
+          secret:
+            secretName: btp-is-alert-service-truststore
+            items:
+              - key: custom-cacerts.jks
+                path: custom-cacerts.jks

@@ -1,0 +1,38 @@
+spring:
+  application:
+    name: btp-is-alert-service
+  main:
+    web-application-type: none
+
+alert:
+  schedule:
+    cron: ${ALERT_SCHEDULE_CRON:0 */15 * * * *}
+
+cpi:
+  base-url: ${CPI_BASE_URL:}
+  global-pid: ${CPI_GLOBAL_PID:Global_Alert}
+  sender-interface-scheme-hex: ${CPI_SENDER_INTERFACE_SCHEME_HEX:53656e646572496e74657266616365}
+  oauth:
+    token-url: ${CPI_TOKEN_URL:}
+    client-id: ${CPI_CLIENT_ID:}
+    client-secret: ${CPI_CLIENT_SECRET:}
+  mpl:
+    filter: ${CPI_MPL_FILTER:Status eq 'ESCALATED'}
+    select: ${CPI_MPL_SELECT:IntegrationArtifact,Status,ApplicationMessageType,Sender,Receiver,IntegrationFlowName,CustomStatus,LogStart,LogEnd}
+    lookback-minutes: ${CPI_MPL_LOOKBACK_MINUTES:15}
+    watermark-parameter-id: ${CPI_MPL_WATERMARK_PARAMETER_ID:AlertWatermark}
+
+event-mesh:
+  base-url: ${EM_BASE_URL:}
+  topic: ${EM_TOPIC:}
+  publish-path: ${EM_PUBLISH_PATH:/messagingrest/v1/topics/{topic}/messages}
+  fail-on-error: ${EM_FAIL_ON_ERROR:true}
+  oauth:
+    token-url: ${EM_TOKEN_URL:}
+    client-id: ${EM_CLIENT_ID:}
+    client-secret: ${EM_CLIENT_SECRET:}
+
+logging:
+  level:
+    com.btp.is.alertservice: ${LOG_LEVEL_ALERT_SERVICE:INFO}
+    org.springframework.web.client: ${LOG_LEVEL_SPRING_WEB_CLIENT:INFO}

@@ -1,0 +1,13 @@
+spring:
+  main:
+    web-application-type: none
+
+alert:
+  schedule:
+    cron: "0 */15 * * * *"
+
+cpi:
+  base-url: https://example.test
+  global-pid: Global_Alert
+  mpl:
+    sample-file: sample_input.json

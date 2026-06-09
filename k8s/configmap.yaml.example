@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: btp-is-alert-service-config
+  namespace: dev-service
+  labels:
+    app: btp-is-alert-service
+data:
+  ALERT_SCHEDULE_CRON: "0 */15 * * * *"
+  CPI_BASE_URL: "https://your-tenant.it-cpi034.cfapps.us10-002.hana.ondemand.com"
+  CPI_GLOBAL_PID: "Global_Alert"
+  CPI_SENDER_INTERFACE_SCHEME_HEX: "53656e646572496e74657266616365"
+  CPI_MPL_FILTER: "Status eq 'ESCALATED'"
+  CPI_MPL_SELECT: "IntegrationArtifact,Status,ApplicationMessageType,Sender,Receiver,IntegrationFlowName,CustomStatus,LogStart,LogEnd"
+  CPI_MPL_LOOKBACK_MINUTES: "15"
+  CPI_MPL_WATERMARK_PARAMETER_ID: "AlertWatermark"
+  EM_BASE_URL: "https://your-event-mesh-host:1443"
+  EM_TOPIC: "your-encoded-topic-name"
+  EM_PUBLISH_PATH: "/messagingrest/v1/topics/{topic}/messages"
+  EM_FAIL_ON_ERROR: "true"
+  LOG_LEVEL_ALERT_SERVICE: "INFO"
+  LOG_LEVEL_SPRING_WEB_CLIENT: "INFO"
+  JAVA_OPTS: "-Djavax.net.ssl.trustStore=/app/certs/custom-cacerts.jks -Djavax.net.ssl.trustStorePassword=changeit"

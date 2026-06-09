@@ -1,0 +1,14 @@
+target/**
+!target/alert-service-*.jar
+.git/
+.idea/
+*.iml
+.DS_Store
+.env
+.env.*
+!.env.example
+certs/custom-cacerts.jks
+k8s/
+sample_input.json
+run-sample.sh
+docker-run.sh
