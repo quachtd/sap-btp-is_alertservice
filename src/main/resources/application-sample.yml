@@ -9,7 +9,7 @@ cpi:
 
 logging:
   level:
-    com.btp.is.alertservice: DEBUG
+    com.quachtd.btp.is.alertservice: DEBUG
     org.springframework.web.client: INFO
 
 event-mesh:

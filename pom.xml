@@ -11,7 +11,7 @@
         <relativePath/>
     </parent>
 
-    <groupId>com.btp.is</groupId>
+    <groupId>com.quachtd.btp.is</groupId>
     <artifactId>alert-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>BTP-IS AlertService</name>

@@ -34,5 +34,5 @@ event-mesh:
 
 logging:
   level:
-    com.btp.is.alertservice: ${LOG_LEVEL_ALERT_SERVICE:INFO}
+    com.quachtd.btp.is.alertservice: ${LOG_LEVEL_ALERT_SERVICE:INFO}
     org.springframework.web.client: ${LOG_LEVEL_SPRING_WEB_CLIENT:INFO}

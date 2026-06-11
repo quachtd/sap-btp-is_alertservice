@@ -68,7 +68,7 @@ Note: look for "required" variables to config as it's required.
 | `EM_TOKEN_URL`                    | Event Mesh OAuth token URL                     | (required)                                  |
 | `EM_CLIENT_ID`                    | Event Mesh OAuth client ID                     | (required)                                  |
 | `EM_CLIENT_SECRET`                | Event Mesh OAuth client secret                 | (required)                                  |
-| `LOG_LEVEL_ALERT_SERVICE`         | Log level for `com.btp.is.alertservice`        | `INFO`                                      |
+| `LOG_LEVEL_ALERT_SERVICE`         | Log level for `com.quachtd.btp.is.alertservice`        | `INFO`                                      |
 | `LOG_LEVEL_SPRING_WEB_CLIENT`     | Log level for `org.springframework.web.client` | `INFO`                                      |
 | `JAVA_OPTS`                       | JVM options (truststore for CPI SSL)           | —                                           |
 | `TRUSTSTORE_PASSWORD`             | Truststore password (used by `docker-run.sh`)  | `changeit`                                  |
